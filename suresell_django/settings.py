@@ -27,7 +27,7 @@ SECRET_KEY = 'rq_9@q6q^+ib!7-j2+owrqcv^%s#@@5#pc+d4l6=*u+u)k7nf%'
 DEBUG = True if os.environ['MODE'] == 'dev' else False
 ALLOWED_HOSTS = ['*']
 
-ALLOWED_HOSTS = []
+
 
 
 # Application definition
