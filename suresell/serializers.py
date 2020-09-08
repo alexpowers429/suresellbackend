@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import Car, SellingFeatures
 
 
+
 class CarSerializer(serializers.HyperlinkedModelSerializer):
     features = serializers.HyperlinkedRelatedField(
         view_name='feature_detail',
