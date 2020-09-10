@@ -5,6 +5,16 @@ from django.db import models
 
 # Create your models here.
 
+# class User(models.Model):
+#     # car = models.ForeignKey(
+#     #     Car, on_delete=models.CASCADE, related_name='users')
+#     username = models.CharField(max_length=80)
+#     email = models.CharField(max_length=80)
+#     password = models.CharField(max_length=80)
+
+    # def __str__(self):
+    #     return f'{self.username}, {self.email}, {self.password}'
+
 
 class Car(models.Model):
     year = models.CharField(max_length=100)
@@ -27,6 +37,8 @@ class SellingFeatures(models.Model):
     feat6 = models.CharField(max_length=50)
     feat7 = models.CharField(max_length=50)
     feat8 = models.CharField(max_length=50)
+    feat9 = models.CharField(max_length=50)
+    feat10 = models.CharField(max_length=50, null=True)
 
     def __str__(self):
-        return f'{self.feat1}, {self.feat2}, {self.feat3}, {self.feat4}, {self.feat4}, {self.feat5}, {self.feat6}, {self.feat7}, {self.feat8}'
+        return f'{self.feat1}, {self.feat2}, {self.feat3}, {self.feat4}, {self.feat4}, {self.feat5}, {self.feat6}, {self.feat7}, {self.feat8}, {self.feat9}, {self.feat10}'
